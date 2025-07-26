@@ -23,7 +23,11 @@ public class BankService {
      * @param amount the amount to be deposited.
      */
     public void deposit(double amount){
-
+    if(amount>0){
+            balance+=amount;
+        } else{
+            System.out.println("Invalid ");
+        }
     }
 
     /**
@@ -32,7 +36,11 @@ public class BankService {
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
-
+    if(amount>0 && amount<=balance){
+            balance-=amount;
+        } else {
+            System.out.println("Insufficient Funds");
+        }
     }
 
     /**
