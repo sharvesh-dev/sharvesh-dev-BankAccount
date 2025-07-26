@@ -48,6 +48,6 @@ public class BankService {
      * @return the user's balance.
      */
     public double getBalance(){
-        return 0;
+        return balance;
     }
 }
